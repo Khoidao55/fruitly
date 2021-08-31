@@ -1,0 +1,11 @@
+.image-gallery-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
+  /* margin: auto; */
+  /* width: 50%; */
+  justify-items: end;
+  align-items: center;
+  justify-content: space-evenly;
+}
+

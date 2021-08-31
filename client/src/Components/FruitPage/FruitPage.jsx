@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import FruitCard from '../FruitCard/FruitCard.jsx';
+import './FruitPage.css';
 const { fruitPic } = require('../../../../data/fruitPicture');
 
 const FruitPage = () => {
@@ -21,7 +22,7 @@ const FruitPage = () => {
 
   if(fruits.length !== 0) {
     return (
-      <div>
+      <div className='image-gallery-container'>
         {fruits.map((fruit, index) => {
           return (
             <div key={index}>

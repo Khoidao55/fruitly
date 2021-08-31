@@ -13,7 +13,12 @@ const fruitPic = {
   "Raspberry": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/raspberry.png",
   "Strawberry": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/strawberry.png",
   "Tomato": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/tomato.png",
-  "Watermelon": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/watermelon.png"
+  "Watermelon": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/watermelon.png",
+  "Grapes": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/watermelon.png",
+  "Lime": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/watermelon.png",
+  "Melon": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/watermelon.png",
+  "Papaya": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/watermelon.png",
+  "Persimmon": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/watermelon.png"
 }
 
 module.exports.fruitPic = fruitPic;
