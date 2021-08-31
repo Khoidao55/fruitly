@@ -1,11 +1,18 @@
 .image-gallery-container {
+  margin-top: 2%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   align-items: start;
-  /* margin: auto; */
-  /* width: 50%; */
   justify-items: end;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  margin-left: 10%;
 }
 
+
+
+@media (min-width: 950px) {
+  .image-gallery-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
