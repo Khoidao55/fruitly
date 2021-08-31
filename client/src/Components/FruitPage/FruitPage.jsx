@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import FruitCard from '../FruitCard/FruitCard.jsx';
+const { fruitPic } = require('../../../../data/fruitPicture');
 
 const FruitPage = () => {
   const [fruits, setFruits] = useState([]);
@@ -9,11 +11,24 @@ const FruitPage = () => {
     setFruits(fruitData.data);
   }, []);
 
-  console.log(fruits);
+  //adds photo to the fruit object.
+  for(let i = 0; i < fruits.length; i++) {
+    if(fruits[i].name in fruitPic) {
+      fruits[i].photo = fruitPic[fruits[i].name];
+    }
+  }
+
+
   if(fruits.length !== 0) {
     return (
       <div>
-        <h1> Fruit Page !</h1>
+        {fruits.map((fruit, index) => {
+          return (
+            <div key={index}>
+              <FruitCard fruit={fruit} />
+            </div>
+          )
+        })}
       </div>
     )
   } else {

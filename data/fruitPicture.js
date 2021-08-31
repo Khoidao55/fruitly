@@ -1,4 +1,4 @@
-{
+const fruitPic = {
   "Apple": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/apple.png",
   "Apricot": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/apricot.png",
   "Banana": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/banana.png",
@@ -15,3 +15,5 @@
   "Tomato": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/tomato.png",
   "Watermelon": "https://passport-media.s3-us-west-1.amazonaws.com/images/eng-intern-interview/watermelon.png"
 }
+
+module.exports.fruitPic = fruitPic;
