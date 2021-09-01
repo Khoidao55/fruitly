@@ -8,7 +8,6 @@ const { fruitPic } = require('../../../../data/fruitPicture');
 const FruitPage = () => {
   let toggle = false;
   const [fruits, setFruits] = useState([]);
-  const [view, setView] = useState(toggle);
   const [selectedFruit, setSelectedFruit] = useState(null);
 
   useEffect(async () => {
@@ -25,7 +24,6 @@ const FruitPage = () => {
 
   const onClickFruit = (fruit) => {
     setSelectedFruit(fruit);
-    setView(view => !view);
   }
 
   if(fruits.length !== 0) {
