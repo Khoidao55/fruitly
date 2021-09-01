@@ -2,6 +2,7 @@ import React from 'react';
 import './FruitCard.css';
 
 const FruitCard = ({ fruit, pic }) => {
+
   return (
     <div>
       <h1>{fruit.name}</h1>
