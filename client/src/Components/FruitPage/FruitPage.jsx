@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import FruitCard from '../FruitCard/FruitCard.jsx';
 import FruitCardInfo from '../FruitCard/FruitCardInfo/FruitCardInfo.jsx';
-import './FruitPage.css';
+import './Fruitpage.css';
 const { fruitPic } = require('../../../../data/fruitPicture');
 
 const FruitPage = () => {
