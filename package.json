@@ -6,7 +6,9 @@
   "scripts": {
     "start": "nodemon ./server/server.js",
     "react-dev": "webpack --watch",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-forever": "forever start server/server.js",
+    "stop-forever": "forever stop server/server.js"
   },
   "repository": {
     "type": "git",
